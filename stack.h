@@ -7,8 +7,8 @@ template<class T>
 class Stack{
 public:
 	Stack(int capacity=10);
-	T& pop();
-	bool push(T& element);
+	T& pop()const;
+	bool push(const T& element);
 	bool isEmpty()const;
 	bool isFull()const;
 	int getNumber()const;
@@ -30,7 +30,7 @@ bool Stack<T>::isEmpty()const{
 	return -1==top?true:false;
 }
 template<class T>
-bool Stack<T>::push(T& element){
+bool Stack<T>::push(const T& element){
 	if(Stack<T>::isFull())
 		return false;
 	else{
@@ -40,7 +40,7 @@ bool Stack<T>::push(T& element){
 	}
 }
 template<class T>
-T& Stack<T>::pop(){
+T& Stack<T>::pop()const{
 	if(Stack<T>::isEmpty())
 		throw "the stack is empty!\n";
 	else{
