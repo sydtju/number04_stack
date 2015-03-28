@@ -13,5 +13,6 @@ C++：简易栈的实现（模板类）
 	
 	期待与您的交流！
 	mail:tjushaoyadong@163.com
+	谢谢
 	
 	
